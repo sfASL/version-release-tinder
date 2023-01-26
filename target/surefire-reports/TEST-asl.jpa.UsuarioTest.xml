@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="asl.jpa.UsuarioTest" time="0.061" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="asl.jpa.UsuarioTest" time="0.062" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
@@ -65,9 +65,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="asl.jpa.UsuarioTest" name="atualizarUsuarioComMerge" time="0.02"/>
+  <testcase classname="asl.jpa.UsuarioTest" name="atualizarUsuarioComMerge" time="0.021"/>
   <testcase classname="asl.jpa.UsuarioTest" name="persistirUsuario" time="0.012"/>
   <testcase classname="asl.jpa.UsuarioTest" name="consultarUsuario" time="0.002"/>
-  <testcase classname="asl.jpa.UsuarioTest" name="removerUsuario" time="0.019"/>
-  <testcase classname="asl.jpa.UsuarioTest" name="atualizarUsuario" time="0.008"/>
+  <testcase classname="asl.jpa.UsuarioTest" name="removerUsuario" time="0.018"/>
+  <testcase classname="asl.jpa.UsuarioTest" name="atualizarUsuario" time="0.009"/>
 </testsuite>

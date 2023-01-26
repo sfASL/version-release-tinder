@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="asl.jpa.LikeTest" time="0.143" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="asl.jpa.LikeTest" time="0.142" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
@@ -65,9 +65,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="asl.jpa.LikeTest" name="atualizarLike" time="0.079"/>
+  <testcase classname="asl.jpa.LikeTest" name="atualizarLike" time="0.08"/>
   <testcase classname="asl.jpa.LikeTest" name="consultarLike" time="0"/>
-  <testcase classname="asl.jpa.LikeTest" name="persistirLike" time="0.029"/>
-  <testcase classname="asl.jpa.LikeTest" name="removerLike" time="0.025"/>
-  <testcase classname="asl.jpa.LikeTest" name="atualizarLikeComMerge" time="0.01"/>
+  <testcase classname="asl.jpa.LikeTest" name="persistirLike" time="0.027"/>
+  <testcase classname="asl.jpa.LikeTest" name="removerLike" time="0.024"/>
+  <testcase classname="asl.jpa.LikeTest" name="atualizarLikeComMerge" time="0.011"/>
 </testsuite>
