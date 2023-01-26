@@ -1,0 +1,8 @@
+com\infortech\asl\model\Usuario.class
+com\infortech\asl\model\Dialogo.class
+com\infortech\asl\model\Combinacao.class
+com\infortech\asl\model\Pessoa.class
+com\infortech\asl\model\Mensagem.class
+com\infortech\asl\Main.class
+com\infortech\asl\model\Like.class
+com\infortech\asl\model\Sexo.class
