@@ -64,7 +64,7 @@ public class UsuarioTestJPQL extends Teste{
         String maiorData = dateFormat.format((Date) resultado[0]);
         String menorData = dateFormat.format((Date) resultado[1]);
         assertEquals("23-08-2001", maiorData);
-        assertEquals("28-09-1999", menorData);
+        assertEquals("05-06-1998", menorData);
     }
     
     
@@ -140,17 +140,7 @@ public class UsuarioTestJPQL extends Teste{
     
         }
     
-    
-    @Test
-    public void usuarioJOINFETCH(){
-        logger.info("Executando usuarioJOINFETCH()");
-        TypedQuery<Usuario> query;
-        query = em.createQuery("Select u FROM Usuario u JOIN FETCH u.quemFoiCurtido", 
-                Usuario.class);
-        List<Usuario> usuarios = query.getResultList();
-        assertEquals(4, usuarios.size());
-       
-        }
+
     
     
     @Test

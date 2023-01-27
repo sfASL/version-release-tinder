@@ -151,6 +151,9 @@ public class UsuarioTest extends Teste{
         Usuario user = em.find(Usuario.class, 4);
         assertNotNull(user);
         em.remove(user);
+        
+        user = em.find(Usuario.class, 4);
+        assertEquals(null, user);
        
     }
     

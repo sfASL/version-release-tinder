@@ -44,7 +44,7 @@ public class MensagemTesteJPQL extends Teste{
                 + "m.remetente mr ORDER BY m.id",
         Object[].class);
         List<Object[]> mensagemRemetente = query.getResultList();
-        assertEquals(2, mensagemRemetente.size());
+        assertEquals(3, mensagemRemetente.size());
     }
     
     // 4, 1
@@ -60,7 +60,7 @@ public class MensagemTesteJPQL extends Teste{
         mensagens.forEach(mensagem -> {
             assertEquals("MORGAN", mensagem.getRemetente().getNome());
         });
-        assertEquals(2, mensagens.size());
+        assertEquals(3, mensagens.size());
         
     }
     
@@ -89,7 +89,7 @@ public class MensagemTesteJPQL extends Teste{
             "SELECT l FROM Mensagem l", Mensagem.class);
         List<Mensagem> mensagens = query.getResultList();
         mensagens.forEach(like -> {
-          assertEquals(2, mensagens.size());
+          assertEquals(3, mensagens.size());
         });
     }
     

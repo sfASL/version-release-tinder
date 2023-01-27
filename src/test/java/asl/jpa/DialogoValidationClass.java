@@ -141,13 +141,13 @@ public class DialogoValidationClass extends Teste{
     @Test
     public void removerDialogo(){
         logger.info("Executando removerDialogo()");
-        Dialogo dialogo = em.find(Dialogo.class, 2);
+        Dialogo dialogo = em.find(Dialogo.class, 3);
         assertNotNull(dialogo);
         em.remove(dialogo);
-        
-        
-       
+ 
     }
+
 */
+
    
 }

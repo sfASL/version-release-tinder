@@ -45,7 +45,7 @@ public class Dialogo implements Serializable {
     private Integer id;
     
     @JoinColumn(name = "USER_AUTOR", referencedColumnName = "ID")
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     private Usuario autor;
     
     @Column(name = "TXT_CONTEUDO_MENSAGEM")

@@ -153,8 +153,11 @@ public class LikeTest extends Teste{
     @Test
     public void removerLike(){
         logger.info("Executando removerLike()");
-        Like like = em.find(Like.class, 1);
+        Like like = em.find(Like.class, 5);
         em.remove(like);
+        
+        like = em.find(Like.class, 5);
+        assertEquals(null, like);
     }
     
     

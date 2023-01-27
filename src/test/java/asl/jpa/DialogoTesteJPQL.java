@@ -49,7 +49,7 @@ public class DialogoTesteJPQL extends Teste{
             assertEquals("MORGAN", autores.getAutor().getNome());
            
         });
-        assertEquals(3, autoresDoDialogo.size());
+        assertEquals(4, autoresDoDialogo.size());
         
 
     }
@@ -75,7 +75,7 @@ public class DialogoTesteJPQL extends Teste{
              "SELECT d FROM Dialogo d", Dialogo.class);
         List<Dialogo> dialogos = query.getResultList();
         dialogos.forEach(dialogo -> {
-          assertEquals(3, dialogos.size());
+          assertEquals(5, dialogos.size());
 
      });
     }

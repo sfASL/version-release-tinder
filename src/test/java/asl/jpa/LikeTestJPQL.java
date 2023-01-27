@@ -24,12 +24,13 @@ import org.junit.Test;
  */
 public class LikeTestJPQL extends Teste{
     
+    
     @Test
     public void likeUsuarioCurtidor(){
         logger.info("Executando likeUsuarioCurtidor()");
         TypedQuery<Like> query;
         query = em.createQuery(
-        "SELECT l FROM Like l LEFT JOIN l.quemCurtiu uc WHERE uc.quemCurtiu = ?5",
+        "SELECT l FROM Like l LEFT JOIN l.quemCurtiu uc WHERE l.quemCurtiu.id = 5",
         Like.class);
         List<Like> curtidasDoUusario = query.getResultList();
         curtidasDoUusario.forEach(usuario -> {
@@ -38,7 +39,7 @@ public class LikeTestJPQL extends Teste{
         assertEquals(2, curtidasDoUusario.size());
         
     }
-    
+   
     
     @Test
     public void selecionarLikesComLimite(){

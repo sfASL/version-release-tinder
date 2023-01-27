@@ -137,8 +137,12 @@ public class MensagemValidationClass extends Teste{
     @Test
     public void removerMensagem(){
         logger.info("Executando removerMensagem()");
-        Mensagem mensagem = em.find(Mensagem.class, 3);
+        Mensagem mensagem = em.find(Mensagem.class, 4);
         em.remove(mensagem);
+        
+        
+        mensagem = em.find(Mensagem.class, 4);
+        assertEquals(null, mensagem);
     }
     
     
